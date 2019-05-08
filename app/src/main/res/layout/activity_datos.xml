@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.DatosActivity">
+
+
+
+        <ImageView
+            android:id="@+id/image_company"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/name_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/phone_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="phone"
+
+            android:textSize="16sp"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/email_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/description_company"
+            android:text="email"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/description_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/email"
+            android:text="Descripcion"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/direction_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/descripcion"
+            android:text="Direccion"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/mensaje"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginBottom="136dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/correo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_forum" />
+
+                <ImageButton
+                    android:id="@+id/llamada"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginBottom="136dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/phone_in_talk" />
+
+                <ImageButton
+                    android:id="@+id/internet"
+                    android:layout_width="66dp"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="136dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/compartir"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_explorer" />
+
+                <ImageButton
+                    android:id="@+id/correo"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginBottom="136dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/llamada"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_email" />
+
+                <ImageButton
+                    android:id="@+id/compartir"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginBottom="136dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/mensaje"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_share" />
+        </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
